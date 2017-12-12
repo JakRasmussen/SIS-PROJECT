@@ -2,53 +2,43 @@ import java.util.*;
 import java.util.ArrayList;
 
 public class MainMenu
+{
+	public static void main(String[] args)
 	{
-
-		public static void main(String[] args)
-			{
-				System.out.println("Please tell me what you want to do");
-		
-				Scanner in = new Scanner(System.in);
+		Scanner in = new Scanner(System.in);
+		System.out.println("What would you like to do?");
+		System.out.println();
+		System.out.println("1) add or delete a student");
+		System.out.println("2) change student grades/schedule");
+		System.out.println("3) sort students");
+		System.out.println();
+		int choice1 = in.nextInt();
 				
-				System.out.println("What would you like to do?");
-				System.out.println("	1) add or delete a student");
-				System.out.println("	2) change student grades/schedule");
-				System.out.println("	3) sort students");
-				int choice1 = in.nextInt();
-				
-				if (choice1 == 1)
-				{
-					addOrDelete();
-				}
-				
-				else if (choice1 == 1)
-				{
-					changeScheduleorGrades();
-				}
-				
-				else if (choice1 == 1)
-				{
-					sortList();
-				}
-				
-		}
-
-		private static void sortList()
+		if (choice1 == 1)
 		{
-			// TODO Auto-generated method stub
-			
+			addOrDelete();
 		}
-
-		private static void changeScheduleorGrades()
+				
+		else if (choice1 == 1)
 		{
-			// TODO Auto-generated method stub
-			
+			changeScheduleorGrades();
 		}
-
-		private static void addOrDelete()
+				
+		else if (choice1 == 1)
 		{
-			// TODO Auto-generated method stub
-			
+			sortList();
 		}
-
 	}
+
+	private static void addOrDelete()
+	{
+	}
+	
+	private static void changeScheduleorGrades()
+	{
+	}
+	
+	private static void sortList()
+	{
+	}
+}
