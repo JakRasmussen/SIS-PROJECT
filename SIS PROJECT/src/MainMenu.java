@@ -14,7 +14,6 @@ public class MainMenu
 		System.out.println();
 		int choice1 = in.nextInt();
 				
-		//skdlf;as
 		if (choice1 == 1)
 		{
 			addOrDelete();
@@ -33,6 +32,8 @@ public class MainMenu
 
 	private static void addOrDelete()
 	{
+		Scanner aOrD = new Scanner(System.in);
+		System.out.println("Would you like to add or delete a student?");
 	}
 	
 	private static void changeScheduleorGrades()
